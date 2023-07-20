@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+
+  
+  <!-- As a heading -->
+  <nav class="navbar navbar-light bg-warning">
+    <div class="container-fluid">
+      <span class="navbar-brand mb-0 h1">Basic-Caluclatour</span>
+    </div>
+  </nav>
+
+  <br>
+  <div class="ok">
+  <label for="fname" >1st number:</label>
+  <input type="number" id="n1">
+  <br>
+  <br>
+  <label for="fname">2nd number:</label>
+  <input type="number" id="n2">
+</div>
+<br>
+
+<div class="okii">
+<button type="button" class="btn btn-outline-success" onclick="Add()">Addition</button>
+<button type="button" class="btn btn-outline-danger"onclick="Sub()">Subtraction</button>
+<button type="button" class="btn btn-outline-primary" onclick="multi()">Multiplication</button>
+<br><br>
+<input type="text" id="ans">
+</div>
+
+<script>
+    function Add(){
+        var nu1 = Number(document.getElementById('n1').value);
+        var nu2 = Number(document.getElementById('n2').value);
+        var res = nu1 + nu2;
+        document.getElementById('ans').value = String(res);
+    }
+
+    function Sub(){
+        var nu1 = Number(document.getElementById('n1').value);
+        var nu2 = Number(document.getElementById('n2').value);
+        var res = nu1 - nu2;
+        document.getElementById('ans').value = String(res);
+  
+    }
+
+    function multi(){
+        var nu1 = Number(document.getElementById('n1').value);
+        var nu2 = Number(document.getElementById('n2').value);
+        var res = nu1 * nu2;
+        document.getElementById('ans').value = String(res);
+
+    }
+</script>
+
+</body>
+</html>
